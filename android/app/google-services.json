@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "380740161956",
+    "firebase_url": "https://sphero-swarm-default-rtdb.firebaseio.com",
+    "project_id": "sphero-swarm",
+    "storage_bucket": "sphero-swarm.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:380740161956:android:e36bcc0ec86f1242a67131",
+        "android_client_info": {
+          "package_name": "com.example.sphero_swarm_interface"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCx1SHhanMIqPgdJV3apDR4d9WpTW-yxOE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
