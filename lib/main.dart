@@ -1,9 +1,10 @@
-import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:flutter/material.dart';
+import 'package:sphero_swarm_interface/screens/splash_screen.dart';
+
 import 'firebase_options.dart';
 
-
-void main() async{
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
@@ -19,8 +20,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      home: Center(
-        child: const Text('Hello World'),
+      home: Scaffold(
+        body: Center(child: SplashScreen()),
       ),
     );
   }
