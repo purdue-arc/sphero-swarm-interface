@@ -1,4 +1,7 @@
+import 'dart:ui' as ui;
+
 import 'package:flutter/material.dart';
+import 'package:sphero_swarm_interface/screens/moleculeCanvas.dart';
 import 'package:sphero_swarm_interface/services/storage.dart';
 
 class CurrentMolecule extends StatefulWidget {
@@ -60,12 +63,19 @@ class _CurrentMoleculeState extends State<CurrentMolecule> {
                             height: 50,
                           ),
                           SizedBox(
-                            width: double.infinity,
-                            height: MediaQuery.of(context).size.height * 0.60,
-                            child: Container(
-                              color: Colors.black,
-                            ),
-                          ),
+                              width: MediaQuery.of(context).size.width * 0.40,
+                              height: MediaQuery.of(context).size.height * 0.30,
+                              child: Container(
+                                decoration: BoxDecoration(
+                                    border: Border.all(
+                                        color: Colors.black, width: 3)),
+                                child: Center(
+                                  child: CustomPaint(
+                                    size: Size.infinite,
+                                    painter: moleculeCanvas(),
+                                  ),
+                                ),
+                              )),
                           const SizedBox(
                             height: 20,
                           ),
