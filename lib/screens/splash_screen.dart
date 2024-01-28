@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sphero_swarm_interface/screens/currentMolecule.dart';
+import 'package:sphero_swarm_interface/screens/moleculesList.dart';
 import 'package:sphero_swarm_interface/services/storage.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -45,6 +46,6 @@ class _SplashScreenState extends State<SplashScreen> {
     //         );
     //       }
     //     });
-    return CurrentMolecule();
+    return MoleculesList();
   }
 }

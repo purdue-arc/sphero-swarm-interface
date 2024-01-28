@@ -13,6 +13,7 @@ class CurrentMolecule extends StatefulWidget {
 
 class _CurrentMoleculeState extends State<CurrentMolecule> {
   final storage = LocalStorage();
+
   @override
   void initState() {
     // TODO: implement initState
